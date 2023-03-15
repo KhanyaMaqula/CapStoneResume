@@ -255,6 +255,21 @@ textarea {
   margin: 0;
 }
 
+.first-job h3  {
+    color: #ff6b00;
+}
+
+.first-job p {
+    color: #fff;
+}
+
+.myQualification {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
 
 @media only screen and  (min-width: 1000px) {
   .toolbar {
@@ -312,6 +327,9 @@ textarea {
     font-family: 'Crete Round', sans-serif;
     font-size: 52px;
     height: 45vh;
+    animation-name: colorChange;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
   }
 
   .intro {
@@ -503,4 +521,38 @@ textarea {
   .desk-btn-sec {
     width: 40%;
   }
+
+  .experience {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .myQualification {
+    flex-direction: row;
+    border: 1px solid #ff6b00;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+  }
+  
+  .profile-pic img {
+    border: 1px solid #ff6b00;
+    border-radius: 100%;
+  }
+
+  
+
+  @keyframes colorChange {
+    from { color: #ff6b00;}
+    to {color: #fff}
+  }
+
+
+  @keyframes colorChangeText {
+    from { color: #fff;}
+    to {color: #ff6b00 }
+  }
+  
 }
